@@ -1,0 +1,1 @@
+The detailed architecture explanation and related artifacts (for example, diagrams)

@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "title": "The Shawshank Redemption",
+        "genre": "Drama",
+        "director": "Frank Darabont",
+        "year": 1994,
+        "rating": 9.3,
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    },
+    {
+        "id": 2,
+        "title": "The Godfather",
+        "genre": "Crime",
+        "director": "Francis Ford Coppola",
+        "year": 1972,
+        "rating": 9.2,
+        "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+        "id": 3,
+        "title": "The Dark Knight",
+        "genre": "Action",
+        "director": "Christopher Nolan",
+        "year": 2008,
+        "rating": 9.0,
+        "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests."
+    },
+    {
+        "id": 4,
+        "title": "Pulp Fiction",
+        "genre": "Crime",
+        "director": "Quentin Tarantino",
+        "year": 1994,
+        "rating": 8.9,
+        "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption."
+    },
+    {
+        "id": 5,
+        "title": "Forrest Gump",
+        "genre": "Drama",
+        "director": "Robert Zemeckis",
+        "year": 1994,
+        "rating": 8.8,
+        "description": "The presidencies of Kennedy and Johnson through the eyes of an Alabama man with an IQ of 75."
+    },
+    {
+        "id": 6,
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "rating": 8.8,
+        "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea."
+    },
+    {
+        "id": 7,
+        "title": "The Matrix",
+        "genre": "Sci-Fi",
+        "director": "Lana Wachowski",
+        "year": 1999,
+        "rating": 8.7,
+        "description": "A computer programmer is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix."
+    },
+    {
+        "id": 8,
+        "title": "Goodfellas",
+        "genre": "Crime",
+        "director": "Martin Scorsese",
+        "year": 1990,
+        "rating": 8.7,
+        "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners."
+    },
+    {
+        "id": 9,
+        "title": "Schindler's List",
+        "genre": "Drama",
+        "director": "Steven Spielberg",
+        "year": 1993,
+        "rating": 8.9,
+        "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce."
+    },
+    {
+        "id": 10,
+        "title": "Fight Club",
+        "genre": "Drama",
+        "director": "David Fincher",
+        "year": 1999,
+        "rating": 8.8,
+        "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club."
+    },
+    {
+        "id": 11,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "genre": "Fantasy",
+        "director": "Peter Jackson",
+        "year": 2001,
+        "rating": 8.8,
+        "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring."
+    },
+    {
+        "id": 12,
+        "title": "Star Wars",
+        "genre": "Sci-Fi",
+        "director": "George Lucas",
+        "year": 1977,
+        "rating": 8.6,
+        "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, and two droids to save the galaxy."
+    },
+    {
+        "id": 13,
+        "title": "Casablanca",
+        "genre": "Romance",
+        "director": "Michael Curtiz",
+        "year": 1942,
+        "rating": 8.5,
+        "description": "A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover escape the Nazis."
+    },
+    {
+        "id": 14,
+        "title": "The Silence of the Lambs",
+        "genre": "Thriller",
+        "director": "Jonathan Demme",
+        "year": 1991,
+        "rating": 8.6,
+        "description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer."
+    },
+    {
+        "id": 15,
+        "title": "Saving Private Ryan",
+        "genre": "War",
+        "director": "Steven Spielberg",
+        "year": 1998,
+        "rating": 8.6,
+        "description": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper."
+    },
+    {
+        "id": 16,
+        "title": "Interstellar",
+        "genre": "Sci-Fi",
+        "director": "Christopher Nolan",
+        "year": 2014,
+        "rating": 8.6,
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+        "id": 17,
+        "title": "The Green Mile",
+        "genre": "Drama",
+        "director": "Frank Darabont",
+        "year": 1999,
+        "rating": 8.6,
+        "description": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder who has a mysterious gift."
+    },
+    {
+        "id": 18,
+        "title": "The Lion King",
+        "genre": "Animation",
+        "director": "Roger Allers",
+        "year": 1994,
+        "rating": 8.5,
+        "description": "A Lion prince is cast out from his pride by his cruel uncle, who claims he killed his father so that he can become king."
+    },
+    {
+        "id": 19,
+        "title": "Terminator 2: Judgment Day",
+        "genre": "Action",
+        "director": "James Cameron",
+        "year": 1991,
+        "rating": 8.5,
+        "description": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son John Connor from a more advanced cyborg."
+    },
+    {
+        "id": 20,
+        "title": "Back to the Future",
+        "genre": "Sci-Fi",
+        "director": "Robert Zemeckis",
+        "year": 1985,
+        "rating": 8.5,
+        "description": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean."
+    },
+    {
+        "id": 21,
+        "title": "Gladiator",
+        "genre": "Action",
+        "director": "Ridley Scott",
+        "year": 2000,
+        "rating": 8.5,
+        "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
+    },
+    {
+        "id": 22,
+        "title": "The Departed",
+        "genre": "Crime",
+        "director": "Martin Scorsese",
+        "year": 2006,
+        "rating": 8.5,
+        "description": "An undercover cop and a police informant play cat and mouse with each other."
+    },
+    {
+        "id": 23,
+        "title": "The Prestige",
+        "genre": "Mystery",
+        "director": "Christopher Nolan",
+        "year": 2006,
+        "rating": 8.5,
+        "description": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion."
+    },
+    {
+        "id": 24,
+        "title": "Apocalypse Now",
+        "genre": "War",
+        "director": "Francis Ford Coppola",
+        "year": 1979,
+        "rating": 8.4,
+        "description": "A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel."
+    },
+    {
+        "id": 25,
+        "title": "Alien",
+        "genre": "Horror",
+        "director": "Ridley Scott",
+        "year": 1979,
+        "rating": 8.4,
+        "description": "After a space merchant vessel perceives an unknown transmission as distress call, they land on the source planet."
+    },
+    {
+        "id": 26,
+        "title": "Sunset Boulevard",
+        "genre": "Drama",
+        "director": "Billy Wilder",
+        "year": 1950,
+        "rating": 8.4,
+        "description": "A screenwriter develops a dangerous relationship with a faded film star determined to make a triumphant return."
+    },
+    {
+        "id": 27,
+        "title": "Dr. Strangelove",
+        "genre": "Comedy",
+        "director": "Stanley Kubrick",
+        "year": 1964,
+        "rating": 8.4,
+        "description": "An insane general triggers a path to nuclear holocaust that a War Room full of politicians and generals frantically tries to stop."
+    },
+    {
+        "id": 28,
+        "title": "The Great Dictator",
+        "genre": "Comedy",
+        "director": "Charlie Chaplin",
+        "year": 1940,
+        "rating": 8.4,
+        "description": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution."
+    },
+    {
+        "id": 29,
+        "title": "Cinema Paradiso",
+        "genre": "Drama",
+        "director": "Giuseppe Tornatore",
+        "year": 1988,
+        "rating": 8.5,
+        "description": "A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village."
+    },
+    {
+        "id": 30,
+        "title": "The Lives of Others",
+        "genre": "Drama",
+        "director": "Florian Henckel von Donnersmarck",
+        "year": 2006,
+        "rating": 8.4,
+        "description": "In 1984 East Berlin, an agent of the secret police conducting surveillance on a writer and his lover finds himself becoming increasingly absorbed by their lives."
+    },
+    {
+        "id": 31,
+        "title": "Grave of the Fireflies",
+        "genre": "Animation",
+        "director": "Isao Takahata",
+        "year": 1988,
+        "rating": 8.5,
+        "description": "A young boy and his little sister struggle to survive in Japan during World War II."
+    },
+    {
+        "id": 32,
+        "title": "Paths of Glory",
+        "genre": "War",
+        "director": "Stanley Kubrick",
+        "year": 1957,
+        "rating": 8.4,
+        "description": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them."
+    },
+    {
+        "id": 33,
+        "title": "Django Unchained",
+        "genre": "Western",
+        "director": "Quentin Tarantino",
+        "year": 2012,
+        "rating": 8.4,
+        "description": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner."
+    },
+    {
+        "id": 34,
+        "title": "The Shining",
+        "genre": "Horror",
+        "director": "Stanley Kubrick",
+        "year": 1980,
+        "rating": 8.4,
+        "description": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence."
+    },
+    {
+        "id": 35,
+        "title": "WALL-E",
+        "genre": "Animation",
+        "director": "Andrew Stanton",
+        "year": 2008,
+        "rating": 8.4,
+        "description": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind."
+    },
+    {
+        "id": 36,
+        "title": "American Beauty",
+        "genre": "Drama",
+        "director": "Sam Mendes",
+        "year": 1999,
+        "rating": 8.3,
+        "description": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend."
+    },
+    {
+        "id": 37,
+        "title": "Spirited Away",
+        "genre": "Animation",
+        "director": "Hayao Miyazaki",
+        "year": 2001,
+        "rating": 8.6,
+        "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods and witches."
+    },
+    {
+        "id": 38,
+        "title": "Psycho",
+        "genre": "Horror",
+        "director": "Alfred Hitchcock",
+        "year": 1960,
+        "rating": 8.5,
+        "description": "A Phoenix secretary embezzles $40,000 from her employer's client and flees to a remote motel run by a young man."
+    },
+    {
+        "id": 39,
+        "title": "City Lights",
+        "genre": "Romance",
+        "director": "Charlie Chaplin",
+        "year": 1931,
+        "rating": 8.5,
+        "description": "The Tramp struggles to help a blind flower girl he has fallen in love with."
+    },
+    {
+        "id": 40,
+        "title": "Modern Times",
+        "genre": "Comedy",
+        "director": "Charlie Chaplin",
+        "year": 1936,
+        "rating": 8.5,
+        "description": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman."
+    },
+    {
+        "id": 41,
+        "title": "Raiders of the Lost Ark",
+        "genre": "Adventure",
+        "director": "Steven Spielberg",
+        "year": 1981,
+        "rating": 8.4,
+        "description": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant."
+    },
+    {
+        "id": 42,
+        "title": "Rear Window",
+        "genre": "Thriller",
+        "director": "Alfred Hitchcock",
+        "year": 1954,
+        "rating": 8.4,
+        "description": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder."
+    },
+    {
+        "id": 43,
+        "title": "The Pianist",
+        "genre": "Drama",
+        "director": "Roman Polanski",
+        "year": 2002,
+        "rating": 8.5,
+        "description": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II."
+    },
+    {
+        "id": 44,
+        "title": "The Usual Suspects",
+        "genre": "Mystery",
+        "director": "Bryan Singer",
+        "year": 1995,
+        "rating": 8.5,
+        "description": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat."
+    },
+    {
+        "id": 45,
+        "title": "Memento",
+        "genre": "Mystery",
+        "director": "Christopher Nolan",
+        "year": 2000,
+        "rating": 8.4,
+        "description": "A man with short-term memory loss attempts to track down his wife's murderer."
+    },
+    {
+        "id": 46,
+        "title": "North by Northwest",
+        "genre": "Thriller",
+        "director": "Alfred Hitchcock",
+        "year": 1959,
+        "rating": 8.3,
+        "description": "A New York City advertising executive goes on the run after being mistaken for a government agent by a group of foreign spies."
+    },
+    {
+        "id": 47,
+        "title": "Vertigo",
+        "genre": "Thriller",
+        "director": "Alfred Hitchcock",
+        "year": 1958,
+        "rating": 8.3,
+        "description": "A former police detective juggles wrestling with his personal demons and becoming obsessed with a beautiful woman."
+    },
+    {
+        "id": 48,
+        "title": "Lawrence of Arabia",
+        "genre": "Adventure",
+        "director": "David Lean",
+        "year": 1962,
+        "rating": 8.3,
+        "description": "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes."
+    },
+    {
+        "id": 49,
+        "title": "Citizen Kane",
+        "genre": "Drama",
+        "director": "Orson Welles",
+        "year": 1941,
+        "rating": 8.3,
+        "description": "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance."
+    },
+    {
+        "id": 50,
+        "title": "Double Indemnity",
+        "genre": "Crime",
+        "director": "Billy Wilder",
+        "year": 1944,
+        "rating": 8.3,
+        "description": "An insurance representative lets himself be talked by a seductive housewife into a murder/insurance fraud scheme."
+    }
+]

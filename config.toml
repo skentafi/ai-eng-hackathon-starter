@@ -1,0 +1,9 @@
+[app]
+name = "movie-recommender"
+version = "0.1.0"
+debug = true
+
+[qdrant]
+host = "qdrant"
+port = 6333
+collection_name = "movies"

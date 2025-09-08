@@ -26,6 +26,8 @@ ai-eng-hackathon-starter/
 └── data/                     # Sample data
 ```
 
+The application is a simple semantic search engine for movies. It can add movies into the collection and perform semantic search through the existing database. 
+
 ## Setup instructions
 1. Clone the repository and change directory into it. 
 2. Run the following:

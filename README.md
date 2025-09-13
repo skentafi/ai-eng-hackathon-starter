@@ -29,11 +29,36 @@ ai-eng-hackathon-starter/
 The application is a simple semantic search engine for movies. It can add movies into the collection and perform semantic search through the existing database. 
 
 ## Setup instructions
-1. Clone the repository and change directory into it. 
-2. Run the following:
+### Prerequisites
+
+Before running this project, make sure you have the following installed:
+
+- **Docker Engine** - [Installation Guide](https://docs.docker.com/get-docker/)
+- **Docker Compose** - [Installation Guide](https://docs.docker.com/compose/install/)
+
+> **Note**: If you're using Docker Desktop, Docker Compose is included automatically.
+
+### Verify Installation
+```bash
+docker --version
+docker compose version 
+``` 
+### Setup steps   
+1. Clone the repository:    
+```
+git clone https://github.com/hyperskill-content/ai-eng-hackathon-starter
+```
+2. Navigate to the project directory:
+```
+cd ai-eng-hackathon-starter
+```
+3. Copy the sample `.env` file and fill it with the required credentials:
 ```
 cp .env.example .env
 # Add your OpenAI API key to .env
-docker-compose up --build 
 ```
-3. Go to http://127.0.0.1:8000/docs to interact with the endpoints.
+4. Build the Docker images and start all services:
+```
+docker compose up --build
+```
+5. Go to http://127.0.0.1:8000/docs to interact with the endpoints.

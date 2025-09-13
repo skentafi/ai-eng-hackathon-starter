@@ -57,8 +57,17 @@ cd ai-eng-hackathon-starter
 cp .env.example .env
 # Add your OpenAI API key to .env
 ```
-4. Build the Docker images and start all services:
+4. Build the Docker images and start all services (first time build):
 ```
 docker compose up --build
+```   
+or 
 ```
+docker compose up
+```
+to start the existing pre-built containers.     
 5. Go to http://127.0.0.1:8000/docs to interact with the endpoints.
+
+
+## Application description and architecture 
+Explanations of features, detected areas for improvement, product development plan, and system design of the app should be described in [ARCHITECTURE.md](docs/ARCHITECTURE.md) file. 

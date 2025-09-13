@@ -9,15 +9,8 @@ movie_service = MovieService()
 
 
 @app.on_event("startup")
-async def load_sample_data():
-
-    data_path = Path(__file__).parent.parent.parent / "data" / "movies.json"
-
-    if data_path.exists():
-        with open(data_path, "r") as f:
-            movies = json.load(f)
-            for movie in movies:
-                movie_service.add_movie(movie)
+async def startup_event():
+    print("Movie service initialized")
 
 
 @app.post("/movies", response_model=dict)

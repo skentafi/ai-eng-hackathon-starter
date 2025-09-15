@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from .schemas import Movie, SearchResponse, MovieResponse
-from .utils import MovieService
+from .services import MovieService
 import json
 from pathlib import Path
 

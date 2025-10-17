@@ -1,9 +1,9 @@
 [app]
-name = "movie-recommender"
-version = "0.1.0"
+name = "cost-estimator"
+version = "1.0.0"
 debug = true
 
-[qdrant]
-host = "qdrant"
-port = 6333
-collection_name = "movies"
+[estimator]
+logic_variant = "cost-estimator-core"
+currency = "USD"
+s3_bucket = "ai-cost-estimator-data"

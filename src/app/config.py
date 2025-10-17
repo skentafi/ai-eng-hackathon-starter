@@ -2,10 +2,13 @@ import os
 import toml
 from pathlib import Path
 
-config_path = Path(__file__).parent.parent.parent / "config.toml"
+config_path = Path(__file__).resolve().parent.parent.parent / "config.toml"
 config = toml.load(config_path)
 
-QDRANT_HOST = os.getenv("QDRANT_HOST", config["qdrant"]["host"])
-QDRANT_PORT = int(os.getenv("QDRANT_PORT", config["qdrant"]["port"]))
-COLLECTION_NAME = os.getenv("COLLECTION_NAME", config["qdrant"]["collection_name"])
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+APP_NAME = config["app"]["name"]
+APP_VERSION = config["app"]["version"]
+DEBUG_MODE = config["app"]["debug"]
+
+LOGIC_VARIANT = os.getenv("LOGIC_VARIANT", config["estimator"]["logic_variant"])
+DEFAULT_CURRENCY = os.getenv("DEFAULT_CURRENCY", config["estimator"]["currency"])
+S3_BUCKET = os.getenv("S3_BUCKET", config["estimator"]["s3_bucket"])

@@ -1,0 +1,17 @@
+metadata:
+  currency: "USD"
+  provider: "internal"
+  last_updated: "2025-10-17"
+
+model:
+  inference: 0.0025       # USD per request
+  retrieval: 0.0015       # USD per request
+  fine_tuning: 0.0500     # USD per request
+
+data:
+  vector_db: 0.10         # USD per GB
+  object_storage: 0.02    # USD per GB
+
+infrastructure:
+  monitoring: 50.0        # USD per month
+  compliance: 100.0       # USD per month

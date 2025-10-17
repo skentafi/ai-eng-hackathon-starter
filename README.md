@@ -76,3 +76,13 @@ docker compose down
 
 ## Application description and architecture 
 Explanations of features, detected areas for improvement, product development plan, and system design of the app should be described in [ARCHITECTURE.md](docs/ARCHITECTURE.md) file. 
+
+## Smoke Test Instructions (FastAPI Service)
+To verify the containerized service is running and responsive:
+1. Run `docker ps` and confirm container is `Up`
+2. Open [http://localhost:8000/docs](http://localhost:8000/docs)
+3. Send a sample payload to `/estimate` via Swagger or curl
+4. Confirm 200 OK and valid response
+5. Send `{}` to test error handling — expect 422 Unprocessable Entity
+
+See `docs/smoke-test.md` for full checklist and sample responses.

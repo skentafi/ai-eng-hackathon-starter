@@ -44,8 +44,12 @@ or
 ```bash
 docker compose up
 ```
-to start the existing pre-built containers.     
-5. Go to http://127.0.0.1:8000/docs to interact with the endpoints.
+
+## Usage
+
+Once the containers are running, open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to access the Swagger UI.  
+From here you can explore the API, send test requests, and view the schema definitions.
+
 
 ## Smoke Test Instructions (FastAPI Service)
 To verify the containerized service is running and responsive:

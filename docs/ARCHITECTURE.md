@@ -6,7 +6,7 @@ This document outlines the architectural decisions, configuration strategy, and 
 
 ## 📦 Repository Structure
 
-<pre>
+```
 ai-eng-hackathon-starter/
 ├── requirements.txt        # Python dependencies  
 ├── README.md               # Main documentation  
@@ -30,7 +30,7 @@ ai-eng-hackathon-starter/
 │       │   └── services.py          # Request orchestration and estimation service layer  
 │       └── assumptions.yaml    # Cost assumptions (YAML)  
 └── data/                       # (Empty) Reserved for sample payloads or test inputs
-</pre>
+```
  
 ---
 
@@ -38,8 +38,8 @@ ai-eng-hackathon-starter/
 
 This section summarizes the core logic modules and their responsibilities:
 
-- `schemas/estimator_model.py`  
-  Defines the Pydantic models for request validation and response formatting.
+- `schemas/estimator_model.py`
+  Defines the core data models used for request validation and response formatting. See Estimation Schema Overview for field-level details.
 
 - `services/estimator_logic.py`  
   Contains the `CostEstimator` class, which applies rule-based logic to compute total cost and assumptions.
@@ -48,6 +48,26 @@ This section summarizes the core logic modules and their responsibilities:
   Contains the `CostService` class, which orchestrates request handling and delegates computation to `CostEstimator`.
 
 These modules form the backbone of the estimation pipeline and are fully deterministic, ensuring reproducibility and clarity.
+
+---
+
+## 📦 Estimation Schema Overview
+
+The system uses structured Pydantic models to validate inputs and format outputs. These models ensure reproducibility, clarity, and Swagger-based documentation.
+
+### Input Model: EstimationRequest
+- `features`: List of capabilities (e.g., inference, retrieval, fine_tuning)
+- `usage_scale`: Expected volume (e.g., 1k, 10k, 100k requests)
+- `interface`: Access method (e.g., api_endpoint)
+- `requirements`: Optional compliance/monitoring flags
+- `data_storage`: Storage type (e.g., vector_db, object_storage)
+
+### Output Models
+- `CostAssumption`: Each applied cost assumption with name, value, unit, and description
+- `CostEstimate`: Final cost breakdown with total and per-category values
+- `EstimationResponse`: Combines assumptions and estimate into a structured response
+
+All schemas are defined in `schemas/estimator_model.py` and exposed via Swagger UI at `/docs`.
 
 ---
 

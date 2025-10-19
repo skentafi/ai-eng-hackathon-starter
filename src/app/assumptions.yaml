@@ -1,0 +1,17 @@
+metadata:
+  currency: "USD"           # All costs are expressed in US dollars
+  provider: "internal"      # Internal estimation logic, not tied to external pricing APIs
+  last_updated: "2025-10-19"  # Updated to reflect scaling logic alignment
+
+model:
+  inference: 0.50           # USD per request — tuned to match Scenario 1 (~500 USD for 1k requests)
+  retrieval: 0.20           # USD per request — used in Scenario 3
+  fine_tuning: 0.25         # USD per request — tuned for Scenario 2 (~2500 USD for 10k requests)
+
+data:
+  vector_db: 0.10           # USD per request — simulates vector DB query cost
+  object_storage: 0.01      # USD per request — simulates minimal S3-style access cost
+
+infrastructure:
+  monitoring: 300.0         # USD per month — tuned to match Scenario 1 and 3 infra baseline
+  compliance: 1500.0        # USD per month — tuned for Scenario 2 infra-heavy self-hosting

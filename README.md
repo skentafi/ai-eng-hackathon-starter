@@ -1,32 +1,19 @@
 # AI Engineer Hackathon Starter Repository
-A starter kit repository for the AI Engineer Hackathon. You can use this repository as a template and develop your solution on the provided structure. This `README.md` should be modified with the information specific to your application.
 
-You should focus on the "Setup Instructions" section to guarantee that following the instructions from start to finish will allow the application to properly initialize and be ready for use. (Try cloning the repository a few times and go through everything line by line before submitting the final solution). The final solution should be present in the `main` branch only, as other branches will not be reviewed during evaluation.
+## Application Overview
 
-We strongly recommend using Docker Compose during the development (`docker-compose.yml` in this repository is the development version with hot reload for the FastAPI server), and for submitting the solution. If you are also developing a full frontend (e.g., using React), connect both components using Docker Compose. 
+This repository contains our submission for the AI Engineer Hackathon: a FastAPI-based AI Cost Estimator that predicts project costs based on structured input. The application is containerized with Docker Compose and includes a smoke-tested /estimate endpoint.
 
-Initial repository structure:
-```
-ai-eng-hackathon-starter/
-├── README.md                   # Main documentation
-├── .gitignore                  # Python + IDE + OS ignores
-├── config.toml                 # Project config 
-├── docker-compose.yml          # Multi-service setup
-├── Dockerfile                  # App container
-├── .env.example                # Environment variables template
-├── docs/
-│   └── ARCHITECTURE.md        # A detailed explanation/ analysis of the app architecture
-├── src/
-│   └── app/
-│       ├── __init__.py
-|       ├── config.py         # Managment for the app settings
-│       ├── main.py           # FastAPI app entry point
-│       ├── schemas/          # Pydantic models
-│       └── utils/            
-└── data/                     # Sample data
-```
+The estimator provides a transparent, rule-based cost breakdown for AI system components based on user-defined inputs. It does not rely on any machine learning model or vector database — all logic is defined in code, ensuring full transparency and reproducibility.
 
-The application is a simple semantic search engine for movies. It can add movies into the collection and perform semantic search through the existing database. 
+## Product Requirements
+This estimator was designed to meet the challenge definitions and user scenarios outlined in our PRD. It supports:
+
+- Scenario 1: Product Manager sanity check
+- Scenario 2: Engineer planning infrastructure
+- Scenario 3: Founder evaluating feasibility
+
+You can view the full PRD, including design rationale and payload definitions, here: 🔗 [AI Cost Estimator PRD (Notion)](https://www.notion.so/PRD-team-two-28dbeb2b4c9f80ea9584f2db86e7fbca)
 
 ## Setup instructions
 ### Prerequisites
@@ -46,7 +33,7 @@ docker compose version
 ### Setup steps   
 1. Clone the repository:    
 ```bash
-git clone https://github.com/hyperskill-content/ai-eng-hackathon-starter
+git clone https://github.com/skentafi/ai-eng-hackathon-starter
 ```
 2. Navigate to the project directory:
 ```bash
@@ -55,7 +42,8 @@ cd ai-eng-hackathon-starter
 3. Copy the sample `.env` file and fill it with the required credentials:
 ```bash
 cp .env.example .env
-# Add your OpenAI API key to .env
+# You may override logic variant, currency, or S3 bucket settings here
+
 ```
 4. Build the Docker images and start all services (first time build):
 ```bash
@@ -65,14 +53,36 @@ or
 ```bash
 docker compose up
 ```
-to start the existing pre-built containers.     
-5. Go to http://127.0.0.1:8000/docs to interact with the endpoints.
 
-To stop the services and remove volumes (if needed), run  
+## Usage
+
+Once the containers are running, open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to access the Swagger UI.  
+From here you can explore the API, send test requests, and view the schema definitions.
+
+## Smoke Test Instructions (FastAPI Service)
+
+To verify the containerized service is running and responsive:
+
+1. Run `docker ps` and confirm container is `Up`
+2. Open [http://localhost:8000/docs](http://localhost:8000/docs)
+3. Send a sample payload to `/estimate` via Swagger or curl
+4. Confirm 200 OK and valid response
+5. Send `{}` to test error handling — expect 422 Unprocessable Entity
+6. Run all three PRD scenarios (see below) to confirm cost logic and schema integrity
+
+### Validated Scenarios
+
+- **Scenario 1:** Inference + Monitoring, 1k requests → Total: 810 USD
+- **Scenario 2:** Fine-tuning + Compliance, 10k requests → Total: 4,100 USD
+- **Scenario 3:** Retrieval + Vector DB, 1k requests → Total: 600 USD
+
+See `docs/smoke-test.md` for full checklist, curl payloads, and expected outputs.
+
+
+## To stop the services, run  
 ```bash
 docker compose down
-# or docker compose down -v to remove the created volumes
 ```
 
-## Application description and architecture 
-Explanations of features, detected areas for improvement, product development plan, and system design of the app should be described in [ARCHITECTURE.md](docs/ARCHITECTURE.md) file. 
+## Application description and architecture
+For a full breakdown of features, logic flow, and design decisions, see [ARCHITECTURE.md](docs/ARCHITECTURE.md) file. 

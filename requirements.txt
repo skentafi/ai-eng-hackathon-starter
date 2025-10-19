@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-qdrant-client==1.15.1
-openai
+pydantic
+pyyaml
 toml

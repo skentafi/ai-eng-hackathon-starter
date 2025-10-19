@@ -1,3 +1,7 @@
+# config.toml
+# Default configuration for AI Cost Estimator
+# Values here can be overridden by environment variables in .env
+
 [app]
 name = "cost-estimator"
 version = "1.0.0"

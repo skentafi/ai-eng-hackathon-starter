@@ -1,4 +1,5 @@
-from app.schemas import EstimationRequest, EstimationResponse, CostEstimator
+from app.schemas import EstimationRequest, EstimationResponse
+from app.services.estimator_logic import CostEstimator
 
 
 class CostService:

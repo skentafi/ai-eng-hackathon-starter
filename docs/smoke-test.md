@@ -26,8 +26,8 @@ This checklist verifies that the containerized FastAPI service is running, respo
 
 ## 3. Minimal Valid Payload Test
 
-# Quick Test via Swagger
-
+### Quick Test via Swagger
+This test verifies that the /estimate endpoint accepts a minimal valid payload and returns a correct cost breakdown.
 1. Run the service: `docker compose up --build`
 2. Open: http://localhost:8000/docs
 3. Click `/estimate` → **Try it out**
@@ -55,4 +55,3 @@ This checklist verifies that the containerized FastAPI service is running, respo
 "vector_db"
 
 "monitoring"
-

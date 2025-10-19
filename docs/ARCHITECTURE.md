@@ -58,7 +58,7 @@ The system uses structured Pydantic models to validate inputs and format outputs
 ### Input Model: EstimationRequest
 - `features`: List of capabilities (e.g., inference, retrieval, fine_tuning)
 - `usage_scale`: Expected volume (e.g., 1k, 10k, 100k requests)
-- `interface`: Access method (e.g., api_endpoint)
+- `interface`: Access method (e.g., api_endpoint, self_hosted) — affects infrastructure cost logic
 - `requirements`: Optional compliance/monitoring flags
 - `data_storage`: Storage type (e.g., vector_db, object_storage)
 
@@ -68,6 +68,8 @@ The system uses structured Pydantic models to validate inputs and format outputs
 - `EstimationResponse`: Combines assumptions and estimate into a structured response
 
 All schemas are defined in `schemas/estimator_model.py` and exposed via Swagger UI at `/docs`.
+
+For full scenario definitions and challenge framing, see the [AI Cost Estimator PRD (Notion)](https://www.notion.so/PRD-team-two-28dbeb2b4c9f80ea9584f2db86e7fbca).
 
 ---
 
@@ -119,9 +121,8 @@ Manual smoke testing is documented in [`docs/smoke-test.md`](./smoke-test.md). I
 
 - Container health and logs
 - API reachability via Swagger UI
-- Minimal valid payload behavior
+- Minimal payload behavior
+- Validation of all three PRD scenarios
 - Correct cost breakdown and assumption mapping
-
-This ensures the service is demo-ready and behaves predictably under expected inputs.
 
 ---

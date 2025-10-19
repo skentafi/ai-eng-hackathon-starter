@@ -21,9 +21,9 @@ class CostEstimator:
         infra_cost = sum(self.assumptions["infrastructure"][req.value] for req in request.requirements)
 
         usage_multiplier = {
-            UsageScale.one_k: 1,
-            UsageScale.ten_k: 10,
-            UsageScale.hundred_k: 100
+            UsageScale.one_k: 1000,
+            UsageScale.ten_k: 10000,
+            UsageScale.hundred_k: 100000,
         }[request.usage_scale]
 
         total_model = model_cost * usage_multiplier
@@ -50,7 +50,7 @@ class CostEstimator:
             CostAssumption(
                 name=request.data_storage.value,
                 value=data_cost,
-                unit="USD/GB",
+                unit="USD/request",
                 description="Data storage type"
             )
         ] + [

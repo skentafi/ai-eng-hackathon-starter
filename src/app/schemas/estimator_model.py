@@ -2,7 +2,6 @@ from pydantic import BaseModel
 from typing import List, Dict
 from enum import Enum
 
-
 # === ENUMS FOR INPUT SCHEMA ===
 
 class Feature(str, Enum):
@@ -25,6 +24,7 @@ class DataStorage(str, Enum):
 
 class Interface(str, Enum):
     api_endpoint = "api_endpoint"
+    self_hosted = "self_hosted"
 
 
 # === INPUT MODEL ===
